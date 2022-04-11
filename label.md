@@ -29,3 +29,25 @@ nodeSelector调度
 nodeSelector是节点选择约束的最简单推荐形式。nodeSelector是PodSpec的领域。它指定键值对的映射。
 
 Pod.spec.nodeSelector是通过Kubernetes的label-selector机制选择节点，由调度器调度策略匹配label，而后调度Pod到目标节点，该匹配规则属于【强制】约束。由于是调度器调度，因此不能越过Taints污点进行调度。
+
+
+Label使用场景
+
+常用的，多维度标签分类：
+
+版本标签（release）： stable（稳定版），canary（金丝雀版本），beta（测试版）
+
+环境类（environment）： dev（开发），qa（测试），production（生产），op（运维）
+
+应用类（applaction）： ui（设计），as（应用软件），pc（电脑端），sc（网络方面）
+
+架构层（tier）： frontend（前端），backend（后端），cache（缓存）
+
+分区标签（partition）： customerA（客户），customerB
+
+品控级别（track）： daily（每天），weekly（每周）
+
+作者：IT小分享
+链接：https://www.jianshu.com/p/5990b68ae755
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
