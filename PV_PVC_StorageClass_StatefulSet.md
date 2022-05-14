@@ -378,6 +378,8 @@ spec:
 
 StatefulSet和Deployment的区别
 
+https://developer.aliyun.com/article/603755
+
 “Deployment用于部署无状态服务，StatefulSet用来部署有状态服务”。
 
 具体的，什么场景需要使用StatefulSet呢？官方给出的建议是，如果你部署的应用满足以下一个或多个部署需求，则建议使用StatefulSet。
